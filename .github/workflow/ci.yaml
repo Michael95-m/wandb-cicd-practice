@@ -1,0 +1,10 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  my-first-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "hello world"
+          echo "Using my first job"
+      
