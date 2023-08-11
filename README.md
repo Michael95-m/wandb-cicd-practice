@@ -1,2 +1,2 @@
 # wandb-cicd-practice
-Just want to practice CI/CD with wandb from gitops course
+This repository contains the resources for CI/CD wandb course.
