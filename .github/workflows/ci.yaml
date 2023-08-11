@@ -8,4 +8,8 @@ jobs:
         run: |
           echo "hello world"
           echo "Using my first job"
+      - name: this will fail
+        run:  |
+          echo "This will fail"
+          exit 1
       
