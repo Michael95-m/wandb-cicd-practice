@@ -3,13 +3,12 @@ on: [push]
 jobs:
   my-first-jobs:
     runs-on: ubuntu-latest
+
     steps:
-      - name: running hello world
-        run: |
-          echo "hello world"
-          echo "Using my first job"
-      - name: this will fail
+      - uses: actions/checkout@v3
+      - name: running python script
         run:  |
-          echo "This will fail"
-          exit 1
+          pip install -r requirements.txt
+          python ci.py
+      
       
